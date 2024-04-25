@@ -46,7 +46,7 @@ const Reviews = () => {
                 <Stars starsRate={review.starRate === "4" ? true : false}/>
               </div>
               <div>
-                <h1 className="text-left text-lg font-sans-600">
+                <h1 className="text-left text-lg font-sans-800">
                   {review.title}
                 </h1>
               </div>

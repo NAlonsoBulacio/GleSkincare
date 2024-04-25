@@ -1,16 +1,18 @@
 const reviews = [
   {
-    name: "Emily Johnson",
-    title: "Amazing Product!",
+    name: "Barbara Glison",
+    title: "I love it! It worked within a few weeks!",
     review:
-      "This serum is truly amazing! I've been using it for a few weeks now and I've already noticed a significant improvement in the texture and appearance of my skin. Highly recommend!",
+      "Very luxurious feel with super quick absorption of my thirsty skin. I was really surprised when I saw the size of the tube. The packaging is fancy, and it came really fast! I am located in Canada, so I didn't expect such a fast delivery!",
   },
   {
-    name: "Liam Smith",
-    title: "Best Serum Ever",
+    name: "Jenny Stricklin",
+    title: "Changed my skin for better",
     review:
-      "I've tried many serums over the years, but this one is by far the best. It leaves my skin feeling hydrated, smooth, and radiant. I can't imagine my skincare routine without it!",
+      "Using gle for wrinkles is a definite change in the way my skin feels.....very plump!",
   },
+
+  
   {
     name: "Olivia Brown",
     title: "Great for Mature Skin",

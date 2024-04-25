@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="w-full flex flex-wrap justify-center items-center py-6 pb-20 bg-white">
       <div className="w-full flex flex-wrap justify-center items-start px-10 sm:px-10 md:px-20 lg:px-28 py-10 space-x-0 lg:space-x-14 space-y-8 lg:space-y-0">
         <div className="w-full lg:w-[40%] flex flex-wrap justify-start items-center space-y-6">
-          <img src={logo} alt="logo" className="w-1/3" />
+          <img src="https://cdn.shopify.com/s/files/1/0436/0673/7049/files/logo_1.png?v=1613788072&width=500" alt="logo" className="w-1/3" />
           <div>© IF BEAUTY AUSTRALIA 2024</div>
           <div className="flex space-x-2"><a href="https://ifbeauty.com.au/policies/refund-policy" className="hover:underline">Refund Policy</a><a href="https://ifbeauty.com.au/policies/terms-of-service" className="hover:underline">Terms of Service</a></div>
           <div className="w-full">
