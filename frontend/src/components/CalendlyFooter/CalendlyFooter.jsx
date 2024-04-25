@@ -124,8 +124,8 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
               <div className="bg-slate-500 w-full h-8 text-gray-200 flex justify-center items-center">
                 {variant.save}
               </div>
-              <div className="flex gap-2">
-                <p className="font-sans-600 text-gray-600 text-lg">
+              <div className="flex gap-2 h-[50px]">
+                <p className="font-sans-600 text-gray-600 text-md lg:text-lg">
                   {variant.variant}
                 </p>
               </div>

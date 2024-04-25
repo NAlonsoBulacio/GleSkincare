@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import "./QuestionsAnswersHome.css";
-import QuestionSvg from "../../utils/QuestionSvg";
-import StarSvg from "../../utils/StarSvg";
-import ShippingSvg from "../../utils/ShippingSvg";
-import ReturnSvg from "../../utils/ReturnSvg";
 const QuestionsAnswersEnd = ({ landing }) => {
   const [answer, setAnswer] = useState("");
 
@@ -14,27 +10,26 @@ const QuestionsAnswersEnd = ({ landing }) => {
 
   const QAs = [
     {
-      question: "How does it work?",
+      question: "Should I combine my Gle for Wrinkles with other Gle Skincare Products?",
       answer:
-        "While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your anti-aging routine will take a few weeks to show more permanent results. Most wrinkle creams are between 1 and 2 fl oz. Please note that Gle for Wrinkles is 4 FL OZ (double the size of most products) to ensure you have enough product for at least 60 days. Yes, for the best results, you should combine your wrinkle cream with other Gle products based on your routine. Pro tip: Wrinkle Cream works best with an Eye Serum and a Night Time Retinol Cream",
+        "Yes, for the best results, you should combine your wrinkle cream with other Gle products based on your routine. Pro tip: Wrinkle Cream works best with an Eye Serum and a Night Time Retinol Cream",
       answer_id: "1",
     },
     {
-      question: "How to use?",
-      answer:
-        "You can use the product during the day and during the night, but for best results, we recommend you bundle it with a Retinol Night Cream!",
+      question: "How long will it take to see results?",
+      answer:" While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your anti-aging routine will take a few weeks to show more permanent results.",
       answer_id: "2",
     },
     {
-      question: "How do I ship?",
+      question: "Can I use Gle for Wrinkles at night?",
       answer:
-        "Order processing takes 1-3 business days before shipment. Once your item/s is dispatched, the estimated delivery time is: - USA: 2-5 business days - UK: 7-18 business days - Australia: 7-18 business days - Canada: 7-18 business days - Europe: 7-18 business days - Rest of world: 14-20 business days",
+        "You can use the product during the day and during the night, but for best results, we recommend you bundle it with a Retinol Night Cream!",
       answer_id: "3",
     },
     {
-      question: "Refund Policy",
+      question: "How long will Gle for Wrinkles last?",
       answer:
-        "We love our Gle skincare and we're confident you will too! In case things don't go as planned, our return and refund policy is designed to make things as easy as possible for you. <a href='/refund-policy' style='text-decoration: underline;' >Click here</a> to learn more about how we can help.",
+        "Most wrinkle creams are between 1 and 2 fl oz. Please note that Gle for Wrinkles is 4 FL OZ (double the size of most products) to ensure you have enough product for at least 60 days.",
       answer_id: "4",
     },
   ];
@@ -70,10 +65,7 @@ const QuestionsAnswersEnd = ({ landing }) => {
                     : handleAnswer("");
                 }}
               >
-                {index === 0 && <QuestionSvg />}
-                {index === 1 && <StarSvg />}
-                {index === 2 && <ShippingSvg />}
-                {index === 3 && <ReturnSvg />}
+              
 
                 <span className="w-3/4 flex-grow text-left font-sans-600 text-gray-800 text-md lg:text-lg">
                   {qa.question}

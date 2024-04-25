@@ -236,7 +236,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                 <div className="w-full flex justify-between">
                   <div className="flex flex-col justify-start">
                     <div className="flex gap-2">
-                      <p className="font-sans-500 text-gray-600 text-xl">
+                      <p className="font-sans-500 text-gray-600 text-left text-md lg:text-xl">
                         {variant.variant}
                       </p>
                       {variant.free_shipping ? (

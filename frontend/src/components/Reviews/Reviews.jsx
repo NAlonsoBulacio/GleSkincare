@@ -20,7 +20,7 @@ const Reviews = () => {
   };
 
   return (
-    <div>
+    <div className="py-8">
       <div>
         <div className="w-full flex justify-center">
           <h1 className="text-gray-700 text-4xl mx-2">4.8</h1>

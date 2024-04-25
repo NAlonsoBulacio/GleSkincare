@@ -16,18 +16,19 @@ const DescriptionPercentage = () => {
             alt=""
           />
         </div>
-        <div className="w-full lg:w-[60%] flex flex-wrap justify-start items-start space-y-4 ">
+        <div className="w-full lg:w-[60%] flex flex-wrap justify-start items-start ">
           <h2 className="w-full font-sans-400 text-xl text-left text-teal-700">
             IF Beauty
           </h2>
-          <img
-            className="block lg:hidden rounded-xl"
-            src="https://cdn.shopify.com/s/files/1/0436/0673/7049/products/gle-wrinkles-cream.jpg?v=1705892041"
-            alt=""
-          />
           <h1 className="font-sans-400 text-3xl lg:text-5xl text-left">
             90 days results
           </h1>
+          <img
+            className="block lg:hidden rounded-xl py-3"
+            src="https://cdn.shopify.com/s/files/1/0436/0673/7049/products/gle-wrinkles-cream.jpg?v=1705892041"
+            alt=""
+          />
+
           <p className="text-left w-auto lg:w-[90%]">
             We have developed and patented the Unfailing Anti-aging Formula
             which has been scientifically proven with clinical studies conducted
