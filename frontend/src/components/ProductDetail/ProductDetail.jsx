@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Registro2 from "../Registro/Registro2";
-
+import CountdownTimer from "../Countdown/CountdownTimer";
 import {
   calendar,
   shipping,
@@ -19,12 +19,12 @@ import {
 
 const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const [images, setImages] = useState({
-    img1: product,
-    img2: product2,
-    img3: product3,
+    img1: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/gle-skincare-anti-aging_31bfc33b-2198-456f-b90c-dbeceaa152c7.jpg?v=1712585837",
+    img2: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_10.png?v=1712783675",
+    img3: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_12.png?v=1712783697",
   });
   const [showRegistro, setShowRegistro] = useState(false);
-  const [activeImg, setActiveImage] = useState(images.img1);
+  // const [activeImg, setActiveImage] = useState(objectVariant.img);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
@@ -32,6 +32,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     price: 35,
     compare_price: 60,
     free_shipping: true,
+    img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_10.png?v=1712783675",
   });
   const variants = [
     {
@@ -40,6 +41,10 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       price: 23,
       compare_price: 40,
       free_shipping: false,
+      img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/gle-skincare-anti-aging_31bfc33b-2198-456f-b90c-dbeceaa152c7.jpg?v=1712585837",
+      contains: [
+        `X1 Anti-Aging Repair Cream  <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
+      ],
     },
     {
       id: 2,
@@ -47,6 +52,12 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       price: 35,
       compare_price: 60,
       free_shipping: true,
+      img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_10.png?v=1712783675",
+      contains: [
+        `X2 Anti-Aging Repair Cream <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
+        `X2 Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
+        `Gift VIP Rejuvenation Advisor (Direct Access)`,
+      ],
     },
     {
       id: 3,
@@ -54,6 +65,12 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       price: 43,
       compare_price: 70,
       free_shipping: true,
+      img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_12.png?v=1712783697",
+      contains: [
+        `X3 Anti-Aging Repair Cream <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
+        `X3 Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
+        `Gift VIP Rejuvenation Advisor (Direct Access)`,
+      ],
     },
   ];
 
@@ -98,34 +115,34 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     setShowRegistro(!showRegistro);
   };
   return (
-    <div className="bg-white flex flex-wrap lg:flex-nowrap">
-      <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
+    <div className="bg-white flex flex-wrap lg:flex-nowrap space-y-2">
+      {/* <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%] ">
         <Slider {...settings} className="">
           <div className="px-2">
             <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img src={product} alt="img_before" />
+              <img src={images.img1} alt="img_before" />
             </div>
           </div>
           <div className="px-2">
             <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img src={product2} alt="img_before" />
+              <img src={images.img2} alt="img_before" />
             </div>
           </div>
           <div className="px-2">
             <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img src={product3} alt="img_before" />
+              <img src={images.img3} alt="img_before" />
             </div>
           </div>
         </Slider>
-      </div>
-      <div className="hidden lg:flex flex-col gap-6 lg:w-2/4">
-        <div className="hidden lg:block sticky top-0">
+      </div> */}
+      <div className="flex flex-col gap-6 lg:w-2/4 ">
+        <div className="sticky top-0">
           <img
-            src={activeImg}
+            src={objectVariant.img}
             alt=""
             className="w-full h-auto aspect-square object-cover rounded-xl"
           />
-          <div className="h-24 flex justify-between">
+          {/* <div className="h-24 flex justify-between">
             <div className="flex flex-row justify-center space-x-6 h-24 overflow-hidden">
               <img
                 src={images.img1}
@@ -146,7 +163,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                 onClick={() => setActiveImage(images.img3)}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-wrap h-full justify-start items-start w-full lg:w-1/2 px-0 lg:px-10 space-y-2">
@@ -168,17 +185,19 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex justify-start items-start py-4">
           <h1 className="text-gray-700 font-sans-500 text-left">
-            If you are tired of creams that you don't know what ingredients are
-            in them and that don't give you the results you expect, our skin
-            repair is for you!
+            This Anti-aging cream contains Vitamin E, B3, and B5. By using the
+            product twice a day you will ensure your skin is well moisturized
+            retaining its natural elasticity.
           </h1>
         </div>
         <div className="w-full flex justify-start items-start">
-          <ul className="text-left text-md lg:text-xl">
-            <li>💜 Guarantees healthy and youthful skin.</li>
-            <li>🍑 Collagen repair Vit C, Peptides, Stem cells.</li>
-            <li>✨ Refreshing citrus scent of pink grapefruit.</li>
-            <li>🌱Not tested on animals and organic.</li>
+          <ul className="text-left text-md lg:text-xl list-disc pl-4 lg:pl-6">
+            {objectVariant.contains?.map((phrase) => (
+              <li
+                className="font-bold"
+                dangerouslySetInnerHTML={{ __html: phrase }}
+              ></li>
+            ))}
           </ul>
         </div>
         <div className="w-full flex flex-wrap gap-3 py-4">
@@ -244,6 +263,24 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
             );
           })}
         </div>
+        <div className="w-full flex justify-start items-start">
+          <div className="w-[65px] flex justify-start items-start  rounded-full overflow-hidden">
+            <img
+              className="w-full h-full"
+              src="https://cdn.shopify.com/s/files/1/0436/0673/7049/files/dermatologist-gle.png?v=1712771349"
+              alt=""
+            />
+          </div>
+          <div className="w-[100%] pl-6">
+            <p className="text-left text-sm">
+              We strongly recommend a 90-day supply (2 creams minimum), as
+              studies indicate that at least 45 days are required to reduce
+              expression lines and 90 days to repair skin cell tissues, visibly
+              diminishing wrinkles. <br /> <span className="font-bold">Dr. Elizabeth Chen</span>
+            </p>
+          </div>
+        </div>
+        <CountdownTimer />
         <div className="w-full ">
           <div className="flex space-x-2 justify-center items-center">
             <p className="font-sans-400 pb-2">
@@ -262,42 +299,20 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
           </button>
           {/* </a> */}
         </div>
-        <div className="w-full flex justify-center items-center py-6  gap-2">
-          <div className="flex justify-center flex-wrap w-[138px] gap-2 lg:gap-6">
-            <div className="w-14 lg:w-20">
-              <img src={shipping} alt="" className="w-full" />
-            </div>
-            <h1 className="text-center text-sm" s>
-              Free Shipping
-            </h1>
-          </div>
-          <div className="flex justify-center flex-wrap w-32 gap-2">
-            <div className="w-14 lg:w-20">
-              <img src={calendar} alt="" className="w-full" />
-            </div>
-            <h1 className="text-center text-sm">30-Day Returns</h1>
-          </div>
-          <div className="flex justify-center flex-wrap w-32 gap-2">
-            <div className="w-14 lg:w-20">
-              <img src={returning} alt="" className="w-full" />
-            </div>
-            <h1 className="text-center text-sm">Easy Exchanges</h1>
-          </div>
+        <div className="w-full flex justify-center items-center py-6">
+         <img src="https://cdn.shopify.com/s/files/1/0436/0673/7049/files/security-logos_8df234ec-25ca-4c88-9c6c-38f9dbe1e7cf.webp?v=1701626722" alt="" />
         </div>
-        <div className="w-full">
-         
+        <div className="w-full ">
           <QuestionsAnswersHome />
         </div>
         <div className="w-full text-center text-lg font-sans-500 text-[#1c4cfc]">
-          + 100.000 happy clients
+        123,000+ Satisfied Clients
         </div>
       </div>
       {showRegistro ? (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Registro2
-              handleShowRegistro={handleShowRegistro}
-            />
+            <Registro2 handleShowRegistro={handleShowRegistro} />
           </div>
         </div>
       ) : (

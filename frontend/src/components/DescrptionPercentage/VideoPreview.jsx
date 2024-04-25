@@ -6,26 +6,23 @@ import { logo_blanco } from "../../assets";
 import VideoPlayer from "./VideoPlayer";
 const VideoWithPreview = () => {
   const VideosUrl = [
-    "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
-    "https://cdn.shopify.com/videos/c/o/v/9807f673cea143efa2369e992d8d5a96.mp4",
-    // "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
+    "https://cdn.shopify.com/videos/c/o/v/6f549ba7ee574a2cb31d0432909ceb14.mp4",
+    "https://cdn.shopify.com/videos/c/o/v/344a32f053b14cafb84af94ea7f1c9df.mp4",
+    "https://cdn.shopify.com/videos/c/o/v/5f862cb6d9e1428f8dbb50b2e50f718d.mp4",
+    "https://cdn.shopify.com/videos/c/o/v/d7f39f5e78d5490d9495568ec7d70522.mp4",
   ];
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesPerRow: 1,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    centerMode: true,
-    // autoplay: true,
-    // autoplaySpeed: 6000,
     focusOnSelect: true,
     responsive: [
       {
         breakpoint: 1025,
         settings: {
-          centerMode: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
@@ -44,7 +41,7 @@ const VideoWithPreview = () => {
     ],
   };
   return (
-    <div className=" py-12 w-full lg:w-[40%] h-auto lg:h-[550px]">
+    <div className=" py-12 w-full lg:w-full h-auto lg:h-[550px]">
       <Slider {...settings} className="">
         {VideosUrl?.map((video, index) => (
           <VideoPlayer url={video} key={index}/>

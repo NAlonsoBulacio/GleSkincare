@@ -16,25 +16,25 @@ const QuestionsAnswersHome = ({ landing }) => {
     {
       question: "How does it work?",
       answer:
-        "This light-as-a-feather formula contains Vitamin C, peptides and plant stem cells to stimulate collagen production and repair.Why boost collagen? Collagen is the most common and abundant protein in the body. In our skin, it is responsible for helping skin cells renew and repair themselves and keeps our skin smooth and healthy. As we mature, collagen is naturally depleted. Vitamin C and specific peptides help stimulate collagen production. Sodium PCA, amino acids and plant-derived hyaluronic acid promote skin hydration. A botanical repair serum for every day. A good starting point if you want to begin using specific serums.",
+        "While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your anti-aging routine will take a few weeks to show more permanent results. Most wrinkle creams are between 1 and 2 fl oz. Please note that Gle for Wrinkles is 4 FL OZ (double the size of most products) to ensure you have enough product for at least 60 days. Yes, for the best results, you should combine your wrinkle cream with other Gle products based on your routine. Pro tip: Wrinkle Cream works best with an Eye Serum and a Night Time Retinol Cream",
       answer_id: "1",
     },
     {
       question: "How to use?",
       answer:
-        "Apply 2-3 pumps to face and neck after cleansing and before your chosen moisturiser. May be used am or pm in conjunction with other serums if required.",
+        "You can use the product during the day and during the night, but for best results, we recommend you bundle it with a Retinol Night Cream!",
       answer_id: "2",
     },
     {
       question: "How do I ship?",
       answer:
-        "Order processing takes 1-3 business days before shipping. Once your items are shipped, estimated delivery time is 2-5 days.",
+        "Order processing takes 1-3 business days before shipment. Once your item/s is dispatched, the estimated delivery time is: - USA: 2-5 business days - UK: 7-18 business days - Australia: 7-18 business days - Canada: 7-18 business days - Europe: 7-18 business days - Rest of world: 14-20 business days",
       answer_id: "3",
     },
     {
       question: "Refund Policy",
       answer:
-        "We love our If - Boost skin health and repair and we're sure you will too! In case things don't go as planned, our return and refund policy is designed to make it as easy as possible for you. <a href='/refund-policy' style='text-decoration: underline;' >Click here</a> for more information on how we can help.",
+        "We love our Gle skincare and we're confident you will too! In case things don't go as planned, our return and refund policy is designed to make things as easy as possible for you. <a href='/refund-policy' style='text-decoration: underline;' >Click here</a> to learn more about how we can help.",
       answer_id: "4",
     },
   ];
