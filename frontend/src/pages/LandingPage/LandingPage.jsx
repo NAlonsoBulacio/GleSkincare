@@ -11,6 +11,7 @@ import Reviews from "../../components/Reviews/Reviews";
 import DrBanner from "../../components/DrBanner/DrBanner";
 import WhatIsGle from "../../components/WhatIsGle/WhatIsGle";
 import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
+import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
 const LandingPage = () => {
   const [homeVariant, setHomeVariant] = useState(2);
   const handleHomeVariant = (variant) => {
@@ -26,6 +27,7 @@ const LandingPage = () => {
         />
         <BenefitsandVideo />
         <WhatIsGle />
+        <BeforeAfterReviews />
       </div>
       <DrBanner />
       <div className="flex flex-wrap py-8 bg-[#ececec] px-2 lg:px-20 xl:px-20">
@@ -56,10 +58,10 @@ const LandingPage = () => {
       </div>
       <div className="px-4 lg:px-10 xl:px-24">
         <DescriptionPercentage />
-        <BeforeAfterReviews />
         <YoutubePlayer />
         <ImageDescription />
         <Reviews />
+        <QuestionsAnswersEnd />
       </div>
       <CalendlyFooter
         handleVariantFooter={handleHomeVariant}

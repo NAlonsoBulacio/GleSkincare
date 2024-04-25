@@ -26,31 +26,12 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const [showRegistro, setShowRegistro] = useState(false);
   // const [activeImg, setActiveImage] = useState(objectVariant.img);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
-  const [objectVariant, setObjectVariant] = useState({
-    id: 2,
-    variant: "Double Pack",
-    price: 35,
-    compare_price: 60,
-    free_shipping: true,
-    img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_10.png?v=1712783675",
-  });
-  const variants = [
-    {
-      id: 1,
-      variant: "Single Pack",
-      price: 23,
-      compare_price: 40,
-      free_shipping: false,
-      img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/gle-skincare-anti-aging_31bfc33b-2198-456f-b90c-dbeceaa152c7.jpg?v=1712585837",
-      contains: [
-        `X1 Anti-Aging Repair Cream  <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
-      ],
-    },
+  const [objectVariant, setObjectVariant] = useState(
     {
       id: 2,
-      variant: "Double Pack",
-      price: 35,
-      compare_price: 60,
+      variant: "DOUBLE + 2 SERUM - (25% DISCOUNT)",
+      price: 119,
+      compare_price: 170,
       free_shipping: true,
       img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_10.png?v=1712783675",
       contains: [
@@ -58,12 +39,40 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         `X2 Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
         `Gift VIP Rejuvenation Advisor (Direct Access)`,
       ],
+      link: "https://gleskin.com/cart/44844070273277:1",
+    });
+  const variants = [
+    {
+      id: 1,
+      variant: "Single Pack",
+      price: 39,
+      compare_price: 49,
+      free_shipping: false,
+      img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/gle-skincare-anti-aging_31bfc33b-2198-456f-b90c-dbeceaa152c7.jpg?v=1712585837",
+      contains: [
+        `X1 Anti-Aging Repair Cream  <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
+      ],
+      link: "https://gleskin.com/cart/44844070240509:1",
+    },
+    {
+      id: 2,
+      variant: "DOUBLE + 2 SERUM - (25% DISCOUNT)",
+      price: 119,
+      compare_price: 170,
+      free_shipping: true,
+      img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_10.png?v=1712783675",
+      contains: [
+        `X2 Anti-Aging Repair Cream <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
+        `X2 Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
+        `Gift VIP Rejuvenation Advisor (Direct Access)`,
+      ],
+      link: "https://gleskin.com/cart/44844070273277:1",
     },
     {
       id: 3,
-      variant: "Triple Pack",
-      price: 43,
-      compare_price: 70,
+      variant: "TRIPLE + 3 SERUM - (35% DISCOUNT)",
+      price: 170,
+      compare_price: 255,
       free_shipping: true,
       img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_12.png?v=1712783697",
       contains: [
@@ -71,6 +80,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         `X3 Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
         `Gift VIP Rejuvenation Advisor (Direct Access)`,
       ],
+      link: "https://gleskin.com/cart/44844070306045:1",
     },
   ];
 
@@ -289,15 +299,14 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
             <img src={au} alt="au" className="w-4 h-4" />
           </div>
 
-          {/* <a href="https://ifbeauty.com.au/cart/41854498111663:1"> */}
+          <a href={objectVariant.link}>
           <button
             id="add-to-bag-button"
             className="w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
-            onClick={() => setShowRegistro(!showRegistro)}
           >
             {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
           </button>
-          {/* </a> */}
+          </a>
         </div>
         <div className="w-full flex justify-center items-center py-6">
          <img src="https://cdn.shopify.com/s/files/1/0436/0673/7049/files/security-logos_8df234ec-25ca-4c88-9c6c-38f9dbe1e7cf.webp?v=1701626722" alt="" />
