@@ -147,7 +147,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex justify-start items-start">
           <h1 className="text-4xl lg:text-5xl text-left text-gray-800 font-sans-700">
-            Collagen Boost and Repair
+            {objectVariant.variant}
           </h1>
         </div>
         <div className="w-full flex justify-start items-start text-[12px]">
@@ -185,7 +185,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                   variant.id === selectedVariant
                     ? "bg-gray-200  border-[#1c4cfc]"
                     : "bg-gray-100 border-gray-400 "
-                } relative h-24 w-full  border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-gray-200`}
+                } relative h-24 w-full  border-2 rounded-md flex gap-4 py-2 lg:py-4 px-4 lg:px-8 cursor-pointer  hover:bg-gray-200`}
                 onClick={() => handleSelectedVariant(variant.id)}
               >
                 <div
