@@ -98,7 +98,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         className="flex  justify-center items-center space-x-3 cursor-pointer h-10 rounded-t-2xl w-full px-8 bg-slate-300"
         onClick={() => setShowOptions(!showOptions)}
       >
-        <p>Ver opciones de compra</p>
+        <p>Show options</p>
         <IoIosArrowDown
           className={` ${
             showOptions ? "rotate-180" : ""
@@ -125,7 +125,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
                 {variant.save}
               </div>
               <div className="flex gap-2 h-[50px]">
-                <p className="font-sans-600 text-gray-600 text-md lg:text-lg">
+                <p className="font-noto-600 text-gray-600 text-md lg:text-lg">
                   {variant.variant}
                 </p>
               </div>
