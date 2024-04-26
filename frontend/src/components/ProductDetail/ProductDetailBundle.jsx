@@ -42,7 +42,6 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       id: 1,
       variant: "GLÈ SMALL BUNDLE",
       price: 63,
-      compare_price: 70,
       free_shipping: false,
       img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_11.png?v=1712783724&w",
       contains: [
@@ -192,15 +191,15 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                         ""
                       )}
                     </div>
-                    <p className="text-left">You Save ${savings}</p>
+                    { variant.compare_price ? <p className="text-left">You Save ${savings}</p> : ""}
                   </div>
                   <div>
                     <p className="text-2xl font-sans-500 text-gray-700">
                       ${variant.price}
                     </p>
-                    <p className="font-sans-400 text-gray-600 line-through">
+                    {variant.compare_price ? <p className="font-sans-400 text-gray-600 line-through">
                       ${variant.compare_price}
-                    </p>
+                    </p> : ""}
                   </div>
                 </div>
                 {variant.id === 2 ? (
