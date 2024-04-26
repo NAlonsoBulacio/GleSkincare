@@ -37,7 +37,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const variants = [
     {
       id: 1,
-      variant: "Single Pack",
+      variant: "Single Cream",
       price: 39,
       compare_price: 49,
       free_shipping: false,
@@ -178,7 +178,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                   variant.id === selectedVariant
                     ? "bg-gray-200  border-[#1c4cfc]"
                     : "bg-gray-100 border-gray-400 "
-                } relative h-24 w-full  border-2 rounded-md flex gap-4 py-2 lg:py-4 px-4 lg:px-8 cursor-pointer  hover:bg-gray-200`}
+                } relative h-24 w-full  border-2 rounded-md flex gap-4 py-2 lg:py-4 px-2 lg:px-4 lg:px-8 cursor-pointer  hover:bg-gray-200`}
                 onClick={() => handleSelectedVariant(variant.id)}
               >
                 <div
@@ -189,7 +189,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                 <div className="w-full flex justify-between">
                   <div className="flex flex-col justify-start">
                     <div className="flex gap-2">
-                      <p className="font-sans-500 text-gray-600 text-left text-md lg:text-xl">
+                      <p className="font-noto-500 text-gray-600 text-left text-md lg:text-xl">
                         {variant.variant}
                       </p>
                       {variant.free_shipping ? (
@@ -200,7 +200,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                         ""
                       )}
                     </div>
-                    <p className="text-left">You Save ${savings}</p>
+                    <p className="text-sm font-noto-300 text-left">You Save ${savings}</p>
                   </div>
                   <div>
                     <p className="text-2xl font-sans-500 text-gray-700">

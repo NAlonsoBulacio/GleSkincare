@@ -17,7 +17,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
   const variants = [
     {
       id: 1,
-      variant: "Single Pack",
+      variant: "Single Cream",
       price: 39,
       compare_price: 49,
       free_shipping: false,
