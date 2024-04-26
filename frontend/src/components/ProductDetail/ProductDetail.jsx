@@ -3,18 +3,11 @@ import star from "../../assets/star.svg";
 import QuestionsAnswersHome from "../QuestionsAnswersHome/QuestionsAnswersHome";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import Registro2 from "../Registro/Registro2";
 import CountdownTimer from "../Countdown/CountdownTimer";
 import {
-  calendar,
-  shipping,
-  returning,
   best_seller,
-  product,
-  product2,
-  product3,
-  au,
+  usa,
 } from "../../assets/index";
 
 const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
@@ -254,9 +247,9 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         <div className="w-full ">
           <div className="flex space-x-2 justify-center items-center">
             <p className="font-sans-400 pb-2">
-              Shipping 2 to 5 days from Sydney, AU
+              Shipping 2 to 5 days from Miamo, USA
             </p>
-            <img src={au} alt="au" className="w-4 h-4" />
+            <img src={usa} alt="au" className="w-4 h-4 mb-2" />
           </div>
 
           <a href={objectVariant.link}>

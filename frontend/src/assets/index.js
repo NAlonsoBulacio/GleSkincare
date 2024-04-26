@@ -6,7 +6,7 @@ import au from "./images/australia.png";
 import product from "./images/product.png";
 import product2 from "./images/product2.png";
 import product3 from "./images/product3.png";
-
+import usa from "./images/usa.png";
 import logo from "./images/logo.png";
 import life from "./images/life.png";
 import logo_blanco from "./images/logo-blanco.png";
@@ -30,6 +30,7 @@ export {
     person, 
     phone, 
     email,
+    usa
 }
 
 
