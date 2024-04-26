@@ -35,7 +35,6 @@ const LandingPage = () => {
       <div className="px-4 lg:px-10 xl:px-24">
         <DescriptionPercentage />
         <YoutubePlayer />
-        <ImageDescription />
         <Reviews />
         <QuestionsAnswersEnd />
       </div>

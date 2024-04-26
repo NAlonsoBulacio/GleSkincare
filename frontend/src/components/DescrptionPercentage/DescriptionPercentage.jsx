@@ -7,7 +7,7 @@ import VideoWithPreview from "./VideoPreview";
 const DescriptionPercentage = () => {
 
   return (
-    <div>
+    <div className="py-8">
       <div className="flex flex-wrap justify-center items-start h-auto lg:h-[550px] xl:space-x-0">
         <div className="w-[40%] px-10 flex items-start overflow-hidden h-full rounded-xl">
           <img

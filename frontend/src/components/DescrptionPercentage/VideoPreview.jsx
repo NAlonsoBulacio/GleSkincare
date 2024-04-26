@@ -41,7 +41,7 @@ const VideoWithPreview = () => {
     ],
   };
   return (
-    <div className=" py-12 w-full lg:w-full h-auto lg:h-[550px]">
+    <div className=" py-12 w-full lg:w-full h-auto lg:h-[550px] overflow-hidden">
       <Slider {...settings} className="">
         {VideosUrl?.map((video, index) => (
           <VideoPlayer url={video} key={index}/>
