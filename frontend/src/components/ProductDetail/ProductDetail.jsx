@@ -39,7 +39,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     {
       id: 1,
       title: "GLÈ FOR WRINKLES",
-      variant: "SINGLE CREAM",
+      variant: "SINGLE",
       price: 39,
       compare_price: 49,
       free_shipping: false,
