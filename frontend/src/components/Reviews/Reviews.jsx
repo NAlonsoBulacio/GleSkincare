@@ -36,25 +36,42 @@ const Reviews = () => {
           {reviews.slice(0, visibleReviews).map((review, index) => (
             <div
               key={index}
-              className="space-y-2 border-b-[1px] border-gray-400 py-2"
+              className=" border-b-[1px] border-gray-400 py-2 flex"
             >
-              <div className="flex gap-x-2">
-                <h1 className="font-sans-600">{review.name}</h1>
-                <h1 className="text-green-600 font-sans-500">Verified Buyer</h1>
+              <div className={`space-y-2 ${review.img ? "w-[73%]" : "w-full"}`}>
+                <div className="flex gap-x-2 ">
+                  <h1 className="font-sans-600 text-lg">{review.name}</h1>
+                  <h1 className="text-green-600 text-lg font-sans-500">
+                    Verified Buyer
+                  </h1>
+                </div>
+                <div>
+                  <Stars starsRate={review.starRate === "4" ? true : false} />
+                </div>
+                <div>
+                  <h1 className="text-left text-lg font-sans-800">
+                    {review.title}
+                  </h1>
+                </div>
+                <div className="flex items-start ">
+                  <h1 className="font-sans-400 text-md text-gray-700 text-left">
+                    {review.review}
+                  </h1>
+                </div>
+                <div>
+                  <p className="font-sans-400 text-gray-500 text-sm text-left">
+                    {review.date}
+                  </p>
+                </div>
               </div>
-              <div>
-                <Stars starsRate={review.starRate === "4" ? true : false}/>
-              </div>
-              <div>
-                <h1 className="text-left text-lg font-sans-800">
-                  {review.title}
-                </h1>
-              </div>
-              <div>
-                <h1 className="font-sans-400 text-gray-600 text-left">
-                  {review.review}
-                </h1>
-              </div>
+
+              {review.img ? (
+                <div className="w-[25%]">
+                  <img src={review.img} alt="" />
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           ))}
           {reviews.length > maxVisibleReviews && (

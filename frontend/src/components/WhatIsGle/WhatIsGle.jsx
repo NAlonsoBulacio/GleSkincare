@@ -8,21 +8,8 @@ const WhatIsGle = () => {
         WHAT IS GLÈ FOR WRINKLES?
       </h1>
       <p className="text-left">
-        <span className="font-bold">Fighting the signs of aging</span>
-        might be frustrating, right?
-        <span className="font-bold">
-          The effective anti-wrinkle products
-        </span>
-        that can target multiple areas are either too expensive or barely
-        effective! Not anymore! Gle for Wrinkles is an
-        <span className="font-bold">
-          unscented, hypoallergenic anti-aging cream for stubborn wrinkles
-          and aging spots around the eyes
-        </span>
-        , forehead, and mouth areas. The
-        <span className="font-bold">remarkable formula</span> is also
-        <span className="font-bold">incredibly effective</span>
-        as a preventative product. Studies show that anti-aging routines
+        <span className="font-bold">Fighting the signs of aging</span>&nbsp;might be frustrating, right?&nbsp;<span className="font-bold">The effective anti-wrinkle products</span> &nbsp;that can target multiple areas are either too expensive or barely
+        effective! Not anymore! Gle for Wrinkles is an&nbsp;<span className="font-bold">&nbsp;unscented, hypoallergenic anti-aging cream for stubborn wrinkles and aging spots around the eyes</span>, forehead, and mouth areas. The&nbsp;<span className="font-bold">remarkable formula</span> is also&nbsp;<span className="font-bold">incredibly effective&nbsp;</span>as a preventative product. Studies show that anti-aging routines
         should start as early as 25 years old.
       </p>
     </div>
