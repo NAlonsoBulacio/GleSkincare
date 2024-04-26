@@ -50,8 +50,8 @@ const BenefitsandVideo = () => {
               className="w-[100%]"
             />
           </div>
-          <div className="py-6 flex items-start">
-            <h1 className="text-md">Dermatologically tested</h1>
+          <div className="w-full py-6 flex justify-center items-start">
+            <h1 className="text-md ">Dermatologically tested</h1>
           </div>
         </div>
       </div>
