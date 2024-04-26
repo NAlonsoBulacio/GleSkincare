@@ -22,6 +22,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const [objectVariant, setObjectVariant] = useState(
     {
       id: 2,
+      title: "GLÈ FOR WRINKLES: DOUBLE",
       variant: "DOUBLE + 2 SERUM - (25% DISCOUNT)",
       price: 119,
       compare_price: 170,
@@ -37,6 +38,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const variants = [
     {
       id: 1,
+      title: "GLÈ FOR WRINKLES",
       variant: "Single Cream",
       price: 39,
       compare_price: 49,
@@ -49,6 +51,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     },
     {
       id: 2,
+      title: "GLÈ FOR WRINKLES: DOUBLE",
       variant: "DOUBLE + 2 SERUM - (25% DISCOUNT)",
       price: 119,
       compare_price: 170,
@@ -63,6 +66,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     },
     {
       id: 3,
+      title: "GLÈ FOR WRINKLES: TRIPLE",
       variant: "TRIPLE + 3 SERUM - (35% DISCOUNT)",
       price: 170,
       compare_price: 255,
@@ -140,7 +144,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex justify-start items-start">
           <h1 className="text-4xl lg:text-5xl text-left text-gray-800 font-sans-700">
-            {objectVariant.variant}
+            {objectVariant.title}
           </h1>
         </div>
         <div className="w-full flex justify-start items-start text-[12px]">
