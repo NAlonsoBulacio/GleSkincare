@@ -206,7 +206,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                     </div>
                     <p className="text-sm font-noto-300 text-left">You Save ${savings}</p>
                   </div>
-                  <div>
+                  <div className="py-2 lg:py-0">
                     <p className="text-2xl font-sans-500 text-gray-700">
                       ${variant.price}
                     </p>
