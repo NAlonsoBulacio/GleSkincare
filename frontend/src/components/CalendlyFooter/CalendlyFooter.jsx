@@ -26,7 +26,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         `X1 Anti-Aging Repair Cream  <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
       ],
       link: "https://gleskin.com/cart/44844070240509:1",
-      save: "Full Price",
+      save: "Save $10",
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         `Gift VIP Rejuvenation Advisor (Direct Access)`,
       ],
       link: "https://gleskin.com/cart/44844070273277:1",
-      save: "Save $12",
+      save: "Save $51",
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         `Gift VIP Rejuvenation Advisor (Direct Access)`,
       ],
       link: "https://gleskin.com/cart/44844070306045:1",
-      save: "Save $12",
+      save: "Save $85",
     },
   ];
 
