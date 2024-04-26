@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import BeforeAfterReviews from "../../components/BeforeAfterReviews/BeforeAfterReviews";
 import DescriptionPercentage from "../../components/DescrptionPercentage/DescriptionPercentage";
 import BenefitsandVideo from "../../components/BenefitsAndvideo/BenefitsandVideo";
-import CalendlyFooter from "../../components/CalendlyFooter/CalendlyFooter";
+import CalendlyFooter from "../../components/CalendlyFooter/CalendlyFooterBundle";
 import Reviews from "../../components/Reviews/Reviews";
 import DrBanner from "../../components/DrBanner/DrBanner";
 import WhatIsGle from "../../components/WhatIsGle/WhatIsGleBundle";
