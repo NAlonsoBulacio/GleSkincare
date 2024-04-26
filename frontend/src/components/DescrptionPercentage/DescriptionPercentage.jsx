@@ -24,7 +24,7 @@ const DescriptionPercentage = () => {
           </h1>
           <div className="overflow-hidden rounded-xl">
             <img
-              className="block lg:hidden rounded-xl py-3"
+              className="block lg:hidden rounded-xl"
               src="https://cdn.shopify.com/s/files/1/0436/0673/7049/products/gle-wrinkles-cream.jpg?v=1705892041"
               alt=""
             />

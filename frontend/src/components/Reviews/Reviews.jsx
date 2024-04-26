@@ -66,7 +66,7 @@ const Reviews = () => {
               </div>
 
               {review.img ? (
-                <div className="w-[25%]">
+                <div className="w-[25%] lg:w-[10%] ml-0 lg:ml-8">
                   <img src={review.img} alt="" />
                 </div>
               ) : (
