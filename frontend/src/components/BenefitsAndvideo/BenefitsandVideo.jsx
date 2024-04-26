@@ -17,7 +17,7 @@ const BenefitsandVideo = () => {
           </div>
         </div>
         <div className="w-1/2 lg:w-1/4 flex flex-wrap justify-center px-2 lg:px-8">
-          <div className="w-auto h-[70px] flex justify-center px-4">
+          <div className="w-[70px] h-[70px] flex justify-center ">
             <img
               src="https://cdn.shopify.com/s/files/1/0436/0673/7049/files/reconocimiento-de-estrellas.png?v=1712615098"
               alt=""
@@ -29,7 +29,7 @@ const BenefitsandVideo = () => {
           </div>
         </div>
         <div className="w-1/2 lg:w-1/4 flex flex-wrap justify-center px-2 lg:px-8">
-          <div className="w-auto h-[70px] flex justify-center px-4">
+          <div className="w-[70px] h-[70px] flex justify-center ">
             <img
               src="https://cdn.shopify.com/s/files/1/0436/0673/7049/files/cabello.png?v=1712615098"
               alt=""
@@ -43,7 +43,7 @@ const BenefitsandVideo = () => {
           </div>
         </div>
         <div className="w-1/2 lg:w-1/4 flex flex-wrap justify-center px-2 lg:px-8">
-          <div className="w-auto h-[70px] flex justify-center px-4">
+          <div className="w-[70px] h-[70px] flex justify-center">
             <img
               src="https://cdn.shopify.com/s/files/1/0436/0673/7049/files/microscopio.png?v=1712615097"
               alt=""
