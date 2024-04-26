@@ -110,6 +110,10 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const handleShowRegistro = () => {
     setShowRegistro(!showRegistro);
   };
+
+  const handleClick = () => {
+    window.fbq("trackCustom", "Checkout");
+  };
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap space-y-2">
       <div className="flex flex-col gap-6 lg:w-2/4 ">
@@ -243,7 +247,9 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
             <img src={usa} alt="au" className="w-4 h-4 mb-2" />
           </div>
 
-          <a href={objectVariant.link}>
+          <a href={objectVariant.link}
+          onClick={() => handleClick()}
+          >
           <button
             id="add-to-bag-button"
             className="w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"

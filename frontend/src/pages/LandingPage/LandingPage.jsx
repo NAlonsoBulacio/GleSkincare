@@ -13,6 +13,7 @@ import WhatIsGle from "../../components/WhatIsGle/WhatIsGle";
 import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
 import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
 import Brands from "../../components/Brands/Brands";
+import Ingredients from "../../components/Ingedrients/Ingredients";
 const LandingPage = () => {
 
   const variants = [
@@ -97,6 +98,7 @@ const LandingPage = () => {
         <DescriptionPercentage />
         <YoutubePlayer />
         <Reviews />
+        <Ingredients />
         <QuestionsAnswersEnd />
       </div>
       <CalendlyFooter

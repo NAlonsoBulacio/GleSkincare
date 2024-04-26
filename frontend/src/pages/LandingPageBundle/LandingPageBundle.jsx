@@ -12,6 +12,7 @@ import WhatIsGle from "../../components/WhatIsGle/WhatIsGleBundle";
 import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
 import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
 import Brands from "../../components/Brands/Brands";
+import Ingredients from "../../components/Ingedrients/Ingredients";
 const LandingPageBundle = () => {
   const [homeVariant, setHomeVariant] = useState(2);
   const handleHomeVariant = (variant) => {
@@ -35,6 +36,7 @@ const LandingPageBundle = () => {
         <DescriptionPercentage />
         <YoutubePlayer />
         <Reviews />
+        <Ingredients />
         <QuestionsAnswersEnd />
       </div>
       <CalendlyFooter
