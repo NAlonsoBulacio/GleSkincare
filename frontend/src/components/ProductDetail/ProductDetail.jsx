@@ -193,7 +193,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                         {variant.variant}
                       </p>
                       {variant.free_shipping ? (
-                        <div className="p-2 py-1 border-[#1c4cfc] text-[#1c4cfc] text-sm font-sans-400 border-2 rounded-md">
+                        <div className="mr-3 p-2 py-1 border-[#1c4cfc] text-[#1c4cfc] text-sm font-sans-400 border-2 rounded-md">
                           Free Shipping
                         </div>
                       ) : (
