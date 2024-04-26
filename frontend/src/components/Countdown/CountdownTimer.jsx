@@ -21,8 +21,8 @@ const CountdownTimer = () => {
   return (
     <div className="w-full flex flex-wrap justify-center py-4">
       <h1 className="w-full text-center px-6">
-        If you close this window, you will lose this offer; you won't find it in
-        our store.
+      ⚠️If you close this window, you will lose this offer; you won't find it in
+        our store⚠️
       </h1>
       <div className="w-full flex justify-center items-center">
         <div className="flex flex-col items-center mx-4 px-4 py-2 bg-gray-200 rounded-xl">

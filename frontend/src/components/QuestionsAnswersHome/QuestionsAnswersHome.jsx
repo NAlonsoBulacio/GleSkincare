@@ -34,7 +34,7 @@ const QuestionsAnswersHome = ({ landing }) => {
     {
       question: "Refund Policy",
       answer:
-        "We love our Gle skincare and we're confident you will too! In case things don't go as planned, our return and refund policy is designed to make things as easy as possible for you. <a href='/refund-policy' style='text-decoration: underline;' >Click here</a> to learn more about how we can help.",
+        "We love our Gle skincare and we're confident you will too! In case things don't go as planned, our return and refund policy is designed to make things as easy as possible for you. <a href='https://gleskin.com/policies/refund-policy' style='text-decoration: underline;' >Click here</a> to learn more about how we can help.",
       answer_id: "4",
     },
   ];
