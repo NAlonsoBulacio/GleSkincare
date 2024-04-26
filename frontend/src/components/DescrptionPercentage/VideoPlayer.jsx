@@ -23,16 +23,18 @@ function VideoPlayer({ video }) {
           Tu navegador no soporta el elemento de video.
         </video>
         {!isPlaying ? (
-          <div className="absolute bottom-0 left-0 overflow-hidden">
+          <div className="absolute bottom-0 left-0 overflow-hidden"
+          onClick={() => handleClick()}
+          >
             <img className="w-full h-full" src={video.coverImg} alt="" />
           </div>
         ) : (
           ""
         )}
         {!isPlaying ? (
-          <div className="absolute top-[50%] left-[50%]">
+          <div className="absolute top-[50%] left-[40%]">
             <FaRegCirclePlay
-              className="text-5xl cursor-pointer"
+              className="text-5xl cursor-pointer text-black"
               onClick={() => handleClick()}
             />
           </div>
