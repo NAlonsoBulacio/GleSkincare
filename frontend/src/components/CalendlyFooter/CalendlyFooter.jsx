@@ -7,11 +7,18 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
-    variant: "2-Pack",
-    price: 35,
-    compare_price: 60,
+    variant: "DOUBLE + 2 SERUM - (25% DISCOUNT)",
+    price: 119,
+    compare_price: 170,
     free_shipping: true,
-    save: "Save $12",
+    img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/Disenosintitulo_10.png?v=1712783675",
+    contains: [
+      `X2 Anti-Aging Repair Cream <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
+      `X2 Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
+      `Gift VIP Rejuvenation Advisor (Direct Access)`,
+    ],
+    link: "https://gleskin.com/cart/44844070273277:1",
+    save: "Save $51",
   });
 
   const variants = [

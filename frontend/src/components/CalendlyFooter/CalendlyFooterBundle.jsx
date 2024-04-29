@@ -7,11 +7,22 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
-    variant: "2-Pack",
-    price: 35,
-    compare_price: 60,
+    variant: "GLÈ ANTI-AGING BUNDLE",
+    price: 99,
+    compare_price: 115,
     free_shipping: true,
-    save: "Save $12",
+    img: "https://cdn.shopify.com/s/files/1/0436/0673/7049/files/gle-bundle-widehead421.png?v=1712783906&width=713",
+    contains: [
+      `Anti-Aging Repair Cream <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
+      `Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
+      `Night Cream with Retinol <span style="font-weight: normal;"> 2fl oz 60ml </span>`,
+      `Face Massager`,
+      `Gift VIP Rejuvenation Advisor (Direct Access)`,
+    ],
+    link: "https://gleskin.com/cart/44844070273277:1",
+    description:
+      "Our bundle The Infallible Anti-Aging Treatment is the most effective anti-aging solution on the market. This solution is recommended by our specialist doctor Elizabeth Chen. it is specifically designed to effectively prevent wrinkles, repair the skin's cellular tissues and produce an immediate tightening effect. It also helps to improve skin health and quality, and alleviate epidermal disorders. ",
+    save: "Save $51",
   });
 
   const variants = [
@@ -26,7 +37,8 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         `Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
       ],
       link: "https://gleskin.com/cart/44844070240509:1",
-      description: "Our small bunndle: This solution is recommended by our specialist doctor Elizabeth Chen. The Anti-aging cream contains Vitamin E, B3, and B5. By using the product twice a day you will ensure your skin is well moisturized retaining its natural elasticity + Gle for Dark Circles is going to be your best friend, ensuring a natural healthy glow with mind-blowing Caffeine and Vitamin C for your morning ritual around the eye area .",
+      description:
+        "Our small bunndle: This solution is recommended by our specialist doctor Elizabeth Chen. The Anti-aging cream contains Vitamin E, B3, and B5. By using the product twice a day you will ensure your skin is well moisturized retaining its natural elasticity + Gle for Dark Circles is going to be your best friend, ensuring a natural healthy glow with mind-blowing Caffeine and Vitamin C for your morning ritual around the eye area .",
       save: "Save $10",
     },
     {
@@ -44,10 +56,10 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         `Gift VIP Rejuvenation Advisor (Direct Access)`,
       ],
       link: "https://gleskin.com/cart/44844070273277:1",
-      description: "Our bundle The Infallible Anti-Aging Treatment is the most effective anti-aging solution on the market. This solution is recommended by our specialist doctor Elizabeth Chen. it is specifically designed to effectively prevent wrinkles, repair the skin's cellular tissues and produce an immediate tightening effect. It also helps to improve skin health and quality, and alleviate epidermal disorders. ",
+      description:
+        "Our bundle The Infallible Anti-Aging Treatment is the most effective anti-aging solution on the market. This solution is recommended by our specialist doctor Elizabeth Chen. it is specifically designed to effectively prevent wrinkles, repair the skin's cellular tissues and produce an immediate tightening effect. It also helps to improve skin health and quality, and alleviate epidermal disorders. ",
       save: "Save $51",
     },
-   
   ];
 
   useEffect(() => {
@@ -106,11 +118,11 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
       >
         {variants?.map((variant, index) => (
           <div
-          key={index}
+            key={index}
             className={`${
               variant.id === selectedVariant ? "bg-slate-400" : ""
             } ${
-              showOptions ? "block opacity-100" : " opacity-0"
+              showOptions ? "block opacity-100 transition-opacity duration-400" : "hidden opacity-0"
             } relative w-24 h-20 border-slate-500 border-2 rounded-xl my-4 overflow-hidden flex  cursor-pointer transition-opacity duration-400`}
             onClick={() => handleSelectedVariant(variant.id, variant.price)}
           >
@@ -132,9 +144,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
           Tratamiento Anti-Aging Infalible
         </h1> */}
         <div>
-          <a href={objectVariant.link}
-          onClick={() => handleClick()}
-          >
+          <a className="" href={objectVariant.link} onClick={() => handleClick()}>
             <button className="w-full rounded-md bg-[#1c4cfc] text-xl lg:text-2xl font-sans-500 text-gray-200 px-2 py-4">
               {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
