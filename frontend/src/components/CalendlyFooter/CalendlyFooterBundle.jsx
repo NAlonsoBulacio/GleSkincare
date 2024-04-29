@@ -19,7 +19,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
       `Face Massager`,
       `Gift VIP Rejuvenation Advisor (Direct Access)`,
     ],
-    link: "https://gleskin.com/cart/44844070273277:1",
+    link: "https://gleskin.com/cart/44869736202493:1",
     description:
       "Our bundle The Infallible Anti-Aging Treatment is the most effective anti-aging solution on the market. This solution is recommended by our specialist doctor Elizabeth Chen. it is specifically designed to effectively prevent wrinkles, repair the skin's cellular tissues and produce an immediate tightening effect. It also helps to improve skin health and quality, and alleviate epidermal disorders. ",
     save: "Save $51",
@@ -36,7 +36,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         `Anti-Aging Repair Cream <span style="font-weight: normal;"> 4fl oz 118ml </span>`,
         `Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
       ],
-      link: "https://gleskin.com/cart/44844070240509:1",
+      link: "https://gleskin.com/cart/44869736169725:1",
       description:
         "Our small bunndle: This solution is recommended by our specialist doctor Elizabeth Chen. The Anti-aging cream contains Vitamin E, B3, and B5. By using the product twice a day you will ensure your skin is well moisturized retaining its natural elasticity + Gle for Dark Circles is going to be your best friend, ensuring a natural healthy glow with mind-blowing Caffeine and Vitamin C for your morning ritual around the eye area .",
       save: "Save $10",
@@ -55,7 +55,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         `Face Massager`,
         `Gift VIP Rejuvenation Advisor (Direct Access)`,
       ],
-      link: "https://gleskin.com/cart/44844070273277:1",
+      link: "https://gleskin.com/cart/44869736202493:1",
       description:
         "Our bundle The Infallible Anti-Aging Treatment is the most effective anti-aging solution on the market. This solution is recommended by our specialist doctor Elizabeth Chen. it is specifically designed to effectively prevent wrinkles, repair the skin's cellular tissues and produce an immediate tightening effect. It also helps to improve skin health and quality, and alleviate epidermal disorders. ",
       save: "Save $51",
